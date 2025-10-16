@@ -7,9 +7,15 @@
 6. 下列方法没说到的文件或者文件夹不需要管（也可能有遗漏，有问题问我就行）
 7. 之前的loop的逻辑结构是手敲的 需要自己读取文件来获得，后续更新，或者自己修改
 8. API方法有时候loop会出错，不行就单个请求
+9. 修改所有需要url（github）访问的资源父路径，与之前的相比有变化
 
 # API
 ## loopy
+网址：[loopy(即梦人)] (https://www.volcengine.com/docs/85621/1810468#g3wIHs7A) 注册
+> 1. 在[即梦AI - 一站式AI创作平台](https://jimeng.jianying.com/ai-tool/home/?utm_medium=aitools&utm_source=aibot&utm_campaign=null&utm_content=hw_jm_aibot)登录，左侧下方有个API点击进入
+> 2. 跳转后登录开通数字人快速模型（免费版，需要实名认证）
+> 3. 获取密钥和ID等（右上角头像悬停后点击API访问密钥）
+
 /data2/cy/0_MM_Lombard_Deepfake/5_loopy
 
 ./response/ 存放过程文件的目录，存放时改为自己的名字最好
@@ -23,6 +29,21 @@
 ./query.py  ->  指定单独1个task_id查询结果
 
 ./loop_body 自动下载不可用 容易出错 不推荐
+
+## SyncLabs
+环境： conda activate syncsdk
+[官网](https://sync.so/projects)
+[说明文档](https://docs.sync.so/introduction)
+
+使用 lipsync-1.9.0-beta 便宜一半 视频要模糊一点
+
+免费的有水印 开通19美元的才没有水印, 可以再看看官方文档研究下，运行代码已写好，看怎么开通 或者怎么处理水印
+
+./batch 是并发执行，具体可参考说明文档
+
+./demo.py 指定一对speaker和utterance得到生成视频的下载地址
+
+## 
 
 
 
